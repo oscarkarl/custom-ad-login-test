@@ -83,6 +83,10 @@
             }
         }
 
+        .header {
+            text-align: center;
+        }
+
         .success {
             font-size: 100px;
             text-align: center;
@@ -100,12 +104,24 @@
             flex-direction: column;
             gap: 12px;
         }
+
+        .entry-item input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 18px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="success">🔒</div>
-    <div id="api"></div>
+    <div>
+        <div class="header">
+            <div class="success">🔒</div>
+            <p>Custom template, cool!</p>
+        </div>
+        <div id="api"></div>
+    </div>
 </body>
 
 </html>
